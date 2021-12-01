@@ -1,0 +1,9 @@
+<% flash.each do |type, message| %>
+  <%= message %>
+<% end %>
+<br>
+<%= form_with url: "/weather_results", method: :post do |f| %>
+  <%= f.label :postcode %>
+  <%= f.text_field :postcode %>
+  <%= f.submit %>
+<% end %>
