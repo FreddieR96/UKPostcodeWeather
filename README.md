@@ -16,4 +16,8 @@ rspec runs the tests
 
 rubocop runs the linting
 
+rails db:seed
+
 rails server to test the app in development environment
+
+To test the app with different temperature thresholds, go into the console, delete the default threshold, and create one with different warm and hot thresholds
