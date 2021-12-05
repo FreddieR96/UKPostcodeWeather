@@ -10,7 +10,7 @@ rails db:create
 
 rails db:migrate and rails db:migrate RAILS_ENV=test
 
-It may be you need to reinstall webpacker with rails webpacker:install
+It may be you need to reinstall webpacker with rails webpacker:install, if the frontends are failing with Rails: Webpacker::Manifest::MissingEntryError
 
 rspec runs the tests
 
