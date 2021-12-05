@@ -1,19 +1,19 @@
+# frozen_string_literal: true
+
 class WeatherResult
   include HTTParty
+  attr_reader :postcode
+
   base_uri 'https://api.weatherapi.com'
 
   def initialize(postcode)
-    @results = 
-    self.class.get("/v1/forecast.json?key=#{ENV['weather_api_key']}&q=#{postcode.strip}")
+    @results =
+      self.class.get("/v1/forecast.json?key=#{ENV['weather_api_key']}&q=#{postcode.strip}")
     @postcode = postcode
   end
 
-  def postcode
-    @postcode
-  end
-
   def valid_uk_postcode
-    !(@results.has_key? 'error') && @results['location']['country'] == "UK"
+    !(@results.key? 'error') && @results['location']['country'] == 'UK'
   end
 
   def temperature

@@ -1,0 +1,12 @@
+AllCops:
+  NewCops: disable
+  Exclude:
+    - 'bin/bundle'
+    - 'db/migrate/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Style/Documentation:
+  Enabled: false

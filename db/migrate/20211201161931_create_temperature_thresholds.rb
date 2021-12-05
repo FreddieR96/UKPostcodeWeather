@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateTemperatureThresholds < ActiveRecord::Migration[6.1]
   def change
     create_table :temperature_thresholds do |t|
