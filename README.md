@@ -15,3 +15,5 @@ It may be you need to reinstall webpacker with rails webpacker:install
 rspec runs the tests
 
 rubocop runs the linting
+
+rails server to test the app in development environment
